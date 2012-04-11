@@ -1,4 +1,5 @@
-package gitFolder;
+import java.io.BufferedReader;
+
 /*
  *This is an implementation of a Caesar Cipher. Pretty simple...
  *
