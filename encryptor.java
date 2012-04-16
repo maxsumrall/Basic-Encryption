@@ -30,7 +30,7 @@ public class encryptor{
 		BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
 		//kb, as in "keyboard"
 		System.out.println("Hej Hej");
-		System.out.println("Choose a method:\n (1) Caesar Cipher \n(2)NULL \n(3)NUll");
+		System.out.println("Choose a method:\n (1)Caesar Cipher \n(2)NULL \n(3)NUll");
 		encryptionMethod = kb.readLine();
 		System.out.print("Choose the operation you want to do: Encryption (1), Decryption (2): ");
 		String operation = kb.readLine();
@@ -56,8 +56,25 @@ public class encryptor{
 				if(cipher.decrypt(reader,"DECRYPTED"+fileName)){System.out.println("Success");}
 			}
 				
-		}	
-	
+		}
+		
+		if (encryptionMethod.equals("2")){
+			System.out.println("YOUR CODE HERE");
+			
+			
+			
+			
+			
+		}
+		
+		if(encryptionMethod.equals("3")){
+			System.out.println("YOUr CODE HERE");
+			
+			
+			
+			
+			
+		}
 	}
 }
 	

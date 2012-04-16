@@ -28,6 +28,7 @@ public class caesarCipher{
 	String DEF = "defghijklmnopqrstuvwxyzabc4567890123 ";
 	
 	public caesarCipher(){
+		//Build the mapping. Yes, you can do with without the hashmap and just compare the index from ABC and find the new letter in DEF, but I used a hashmap. 
 		eMapping = new HashMap<String, String>();
 		for(int i = 0; i< ABC.length(); i++){
 			eMapping.put(ABC.substring(i,i+1),DEF.substring(i,i+1));
