@@ -30,7 +30,7 @@ public class encryptor{
 		BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
 		//kb, as in "keyboard"
 		System.out.println("Hej Hej");
-		System.out.println("Choose a method:\n (1)Caesar Cipher \n(2)NULL \n(3)NUll");
+		System.out.println("Choose a method:\n (1)Caesar-Cipher \n(2)Max-Cipher \n(3)NUll");
 		encryptionMethod = kb.readLine();
 		System.out.print("Choose the operation you want to do: Encryption (1), Decryption (2): ");
 		String operation = kb.readLine();
@@ -50,21 +50,23 @@ public class encryptor{
 			System.out.print("Attempting Caesar Method. ");
 			CaesarCipher cipher = new CaesarCipher();
 			if(encrypt){
-				if(cipher.encrypt(reader,"ENCRYPTED"+fileName)){System.out.println("Success");}
+				if(cipher.encrypt(reader,"Encrypted"+fileName)){System.out.println("Success");}
 			}
 			else{
-				if(cipher.decrypt(reader,"DECRYPTED"+fileName)){System.out.println("Success");}
+				if(cipher.decrypt(reader,"Decrypted"+fileName)){System.out.println("Success");}
 			}
 				
 		}
 		
 		if (encryptionMethod.equals("2")){
-			System.out.println("YOUR CODE HERE");
-			
-			
-			
-			
-			
+			System.out.println("Attempting Max Method. ");
+			MaxCipher max = new MaxCipher(key);
+			if(encrypt){
+				if(max.encrypt(reader,"Encrypted"+fileName)){System.out.println("Success");}
+			}
+			else{
+				if(max.decrypt(reader, "Decrypted"+ fileName)){System.out.println("Success");}
+			}	
 		}
 		
 		if(encryptionMethod.equals("3")){

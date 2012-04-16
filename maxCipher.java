@@ -23,16 +23,13 @@ import java.util.HashMap;
 
 public class MaxCipher {
 	
-	String master = "abcdefghijklmnopqrstuvwxyz1234567890 ";
-	String ABC = "abcdefghijklmnopqrstuvwxyz1234567890";
-
+	String ABC = "abcdefghijklmnopqrstuvwxyz1234567890";//needed to make new version
 	String MAX = "";
 	Cipher genericCipher;
 	/*public maxCipher(){
 		this("");//if no key is given, we use a blank key
 	}*/
 	public MaxCipher(String key){
-		System.out.println(ABC);
 		MAX = MAX+ key;
 		int index = ABC.indexOf(key.substring(key.length()-1));
 		//remove all letters in key from the master list, ABC
