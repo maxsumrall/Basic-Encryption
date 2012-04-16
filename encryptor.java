@@ -48,7 +48,7 @@ public class encryptor{
 		//=================================
 		if (encryptionMethod.equals("1")){
 			System.out.print("Attempting Caesar Method. ");
-			caesarCipher cipher = new caesarCipher();
+			CaesarCipher cipher = new CaesarCipher();
 			if(encrypt){
 				if(cipher.encrypt(reader,"ENCRYPTED"+fileName)){System.out.println("Success");}
 			}
