@@ -1,3 +1,3 @@
-This course is so easy. 
-
--Sweden
+Get the java files and compile them. Then you need a normal text file in the same directory.
+Run the encryptor file, and follow the instructions. The file will be saved out with the word ENCRYPTED
+or DECYRPTED prefixed to it. 
