@@ -22,7 +22,7 @@ public class Cipher{
 	final HashMap<String, String> eMapping;
 	final HashMap<String, String> dMapping;
 	
-	String ABC = "abcdefghijklmnopqrstuvwxyz1234567890 ";// :-) notice the blank space at both end? blank --> blank (I'm so clever)
+	String ABC = "abcdefghijklmnopqrstuvwxyz ";// :-) notice the blank space at both end? blank --> blank (I'm so clever)
 	
 	public Cipher(String substitutedVersion){
 		String DEF = substitutedVersion;

@@ -23,7 +23,7 @@ import java.util.HashMap;
 
 public class MaxCipher {
 	
-	String ABC = "abcdefghijklmnopqrstuvwxyz1234567890";//needed to make new version
+	String ABC = "abcdefghijklmnopqrstuvwxyz";//needed to make new version
 	String MAX = "";
 	Cipher genericCipher;
 	/*public maxCipher(){

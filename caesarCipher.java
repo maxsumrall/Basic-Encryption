@@ -21,7 +21,7 @@ public class CaesarCipher{
 	 * @param String what to encrypt
 	 * @return Encrypted String
 	 */
-	String DEF = "defghijklmnopqrstuvwxyzabc4567890123 ";
+	String DEF = "defghijklmnopqrstuvwxyzabc ";
 	Cipher genericCipher;
 	public CaesarCipher(){
 		genericCipher = new Cipher(DEF);
