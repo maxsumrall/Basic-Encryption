@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 
 public class Transposition{
@@ -23,36 +24,30 @@ public class Transposition{
 			masterList.add(new LinkedList<String>());//masterlist is a list, and each index in the list is another list representing a column
 		}
 		//So now we have all the columns, we just need to put everything into them.
-		int inChar = inFile.read();
-		String strRep = "";
+		char strRep = " ".charAt(0);
 		int currColumn = 0;
-		while(inChar != -1){//calls to read() return -1 when EOF
-			strRep = String.valueOf(inChar);//converts the int inChar to its String version, because I like strings and it fits my mental model
-			if(!strRep.equals(" ")){//only if its not a space, AKA we ignore spaces
-				masterList.get(currColumn).add(strRep);
+	    String text = new Scanner( inFile ).useDelimiter("\\A").next();//read the whole file in 1 line :-)
+	    text = text.replaceAll("\n", "");
+	    text = text.replaceAll(" ", "");
+		for(char c: text.toCharArray()){
+			strRep = c;//converts the int inChar to its String version, because I like strings and it fits my mental model
+			if(!String.valueOf(strRep).equals(" ")){//only if its not a space, AKA we ignore spaces
+				masterList.get(currColumn).add(String.valueOf(strRep));
 				currColumn++;
 				if(currColumn == key){
 					currColumn = 0;//loop back around
-					/*
-					 * I want it it have nice spaces every key characters when its written to file
-					 * so instead of : "adfasdfasdfasdfasdfsadfsadfwerfgsdf"
-					 * you have      : "adfas dfasd fasdf asdfs adfsa dfwer fgsdf"
-					 */
-					if(masterList.get(0).size()%key == 0){
-						for(int i = 0; i< key;i++){
-							masterList.get(i).add(" ");
-						}
-					}
+					
 				}
 				
 			}
-			inChar = inFile.read();
 		}
 		//Now the matrix is filled with the letters
 		//Next is to write out each column to the file.
 		for(int i = 0; i< key; i++){
 			//get the column, then convert it to an Object array, then to a string, then to a char array <-only array type write will take.
-			outFile.write(masterList.get(i).toArray().toString().toCharArray(),0,masterList.get(i).size()-1);//might be a problem with the sizes.
+			for(int j = 0; j < masterList.get(i).size(); j++){
+				outFile.write(masterList.get(i).get(j),0,1);//might be a problem with the sizes.
+			}
 		}
 		inFile.close();
 		outFile.close();
@@ -67,21 +62,12 @@ public class Transposition{
 	 * @return true if completed successfully 
 	 */
 	public boolean decodeColumnarTransposition(BufferedReader inFile, BufferedWriter outFile, int key) throws IOException{
-		LinkedList<String> message = new LinkedList<String>();
-		int inChar = inFile.read();
-		String strRep = "";
-		int count = 0;
-		//Must read entire message to know how to seperate it. 
-		while(inChar != -1){
-			strRep = String.valueOf(inChar);
-			if(!strRep.equals(" ")){message.add(strRep);}
-		}
-		int colLength = message.size()/key;//integer division on purpose...
-		for(int i = 0; i< key; i++){
-			for(int j = i; j <message.size(); j+=colLength){
-				if(j < message.size()){
-					outFile.write(message.get(j));
-				}
+	    String text = new Scanner( inFile ).useDelimiter("\\A").next();//read the whole file in 1 line :-)
+		int colLength = (text.length()+1)/key;//integer division on purpose...
+		System.out.println(key);
+		for(int i = 0; i<= colLength; i++){
+			for(int j = i; j < text.length(); j+=colLength){
+					outFile.write(text.substring(j,j+1));
 			}
 		}
 		inFile.close();
