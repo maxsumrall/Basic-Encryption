@@ -41,15 +41,25 @@ public class Transposition{
 				
 			}
 		}
+		//now pad the matrix so each column is the same length.
+		for(int i = 1;i<masterList.size();i++){
+			if(masterList.get(i).size() != masterList.get(0).size()){//only possible to have it 1 off
+				masterList.get(i).add("X");
+			}
+		}
 		//Now the matrix is filled with the letters
 		prettyPrint(masterList);
 		//Next is to write out each column to the file.
-		for(int i = 0; i< key; i++){
-			//get the column, then convert it to an Object array, then to a string, then to a char array <-only array type write will take.
-			for(int j = 0; j < masterList.get(i).size(); j++){
-				outFile.write(masterList.get(i).get(j),0,1);//might be a problem with the sizes.
+		for(int i = 0; i < masterList.size();i++){
+			for(int j = 0; j < masterList.get(i).size(); j++){try{
+				outFile.write(masterList.get(i).get(j));
+				System.out.print(masterList.get(i).get(j));
+				if(j%masterList.size()==0){System.out.print(" ");}
+			}catch(Exception e){}
 			}
 		}
+			
+		
 		inFile.close();
 		outFile.close();
 		return true;
@@ -78,7 +88,7 @@ public class Transposition{
 	    String text = new Scanner( inFile ).useDelimiter("\\A").next();//read the whole file in 1 line :-)
 		int colLength = (text.length()+1)/key;//integer division on purpose...
 		System.out.println(key);
-		for(int i = 0; i<= colLength; i++){
+		for(int i = 0; i< colLength; i++){
 			for(int j = i; j < text.length(); j+=colLength){
 					outFile.write(text.substring(j,j+1));
 			}
