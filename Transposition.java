@@ -42,6 +42,7 @@ public class Transposition{
 			}
 		}
 		//Now the matrix is filled with the letters
+		prettyPrint(masterList);
 		//Next is to write out each column to the file.
 		for(int i = 0; i< key; i++){
 			//get the column, then convert it to an Object array, then to a string, then to a char array <-only array type write will take.
@@ -54,6 +55,18 @@ public class Transposition{
 		return true;
 		
 	}
+	
+	public void prettyPrint(LinkedList<LinkedList<String>> list){
+		System.out.println();
+		for(int i = 0; i< list.get(0).size(); i++){
+			for(int j = 0;j <list.size();j++){try{
+				System.out.print(list.get(j).get(i));
+				System.out.print(" ");}catch(Exception e){}
+			}
+			System.out.print("\n");
+		}
+	}
+	
 	/**
 	 * Reads in an encoded file and decodes it
 	 * @param inFile
@@ -80,8 +93,8 @@ public class Transposition{
 	
 	
 	
-	/*
-	public static String trans(String ktxt, String ptxt){
+	
+	public String trans(String ktxt, String ptxt){
         int key_length = ktxt.length();
         char[] temp = ktxt.toCharArray();               
                 //remove \n from key length
@@ -121,5 +134,5 @@ public class Transposition{
                 return output.toString();
                
     }
-*/
+
 }
