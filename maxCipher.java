@@ -30,6 +30,10 @@ public class MaxCipher {
 		this("");//if no key is given, we use a blank key
 	}*/
 	public MaxCipher(String key){
+		if(key.length() > ABC.length()){
+			System.out.println("Key too large");
+			System.exit(1);
+		}
 		MAX = MAX+ key;
 		int index = ABC.indexOf(key.substring(key.length()-1));
 		//remove all letters in key from the master list, ABC
