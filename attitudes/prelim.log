@@ -1,0 +1,139 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  26 APR 2012 14:11
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**prelim.tex
+(./prelim.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/apa/apa.cls
+Document Class: apa 2008/12/09 American Psychological Association format v1.3.4
+
+
+Class apa Warning: Using BibTeX with apacite for citations and references.
+
+
+Class apa Warning: Using default mode (doc).
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2009/03/01 v4.05 APA citation
+\c@BibCnt=\count87
+\bibleftmargin=\skip43
+\bibindent=\skip44
+\bibparsep=\skip45
+\bibitemsep=\skip46
+)
+\b@level@one@skip=\skip47
+\e@level@one@skip=\skip48
+\b@level@two@skip=\skip49
+\e@level@two@skip=\skip50
+\b@level@three@skip=\skip51
+\e@level@three@skip=\skip52
+\b@level@four@skip=\skip53
+\e@level@four@skip=\skip54
+\b@level@five@skip=\skip55
+\e@level@five@skip=\skip56
+\c@APAenum=\count88
+\@text@par@indent=\skip57
+\gr@box=\box26
+\gr@boxwidth=\skip58
+\gr@boxheight=\skip59
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+\c@appendix=\count89
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (./prelim.aux)
+\openout1 = `prelim.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/apa/english.apa
+File: english.apa 2006/01/01
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2009/03/01 v4.05 apacite language file
+LaTeX Info: Redefining \BPBI on input line 119.
+LaTeX Info: Redefining \BHBI on input line 120.
+
+NOT AUSTRALIAN!!!
+)
+
+Class apa Warning: Abstract not defined.
+
+Using title for running head
+[1
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (./prelim.aux) )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 7 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 984 strings out of 493633
+ 11555 string characters out of 3143378
+ 68438 words of memory out of 3000000
+ 4343 multiletter control sequences out of 15000+200000
+ 4890 words of font info for 18 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 27i,4n,21p,872b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sl10.pfb>
+Output written on prelim.pdf (2 pages, 53730 bytes).
+PDF statistics:
+ 27 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
