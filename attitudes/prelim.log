@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  26 APR 2012 14:11
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  26 APR 2012 16:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -124,13 +124,13 @@ Here is how much of TeX's memory you used:
  4343 multiletter control sequences out of 15000+200000
  4890 words of font info for 18 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 27i,4n,21p,872b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,4n,21p,892b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sl10.pfb>
-Output written on prelim.pdf (2 pages, 53730 bytes).
+Output written on prelim.pdf (2 pages, 53777 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream
