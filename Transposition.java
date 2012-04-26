@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -18,7 +19,8 @@ public class Transposition{
 	 * @param key the number of columns to use in the matrix
 	 * @return true if operation succeeded successfully
 	 */
-	public boolean encodeColumnarTransposition(BufferedReader inFile, BufferedWriter outFile, int key) throws IOException{
+	public boolean encodeColumnarTransposition(BufferedReader inFile, String outFileName, int key) throws IOException{
+		BufferedWriter outFile = new BufferedWriter(new FileWriter(outFileName));
 		LinkedList<LinkedList<String>> masterList = new LinkedList<LinkedList<String>>();
 		for(int i = 0; i<key; i++){
 			masterList.add(new LinkedList<String>());//masterlist is a list, and each index in the list is another list representing a column
@@ -84,7 +86,8 @@ public class Transposition{
 	 * @param key
 	 * @return true if completed successfully 
 	 */
-	public boolean decodeColumnarTransposition(BufferedReader inFile, BufferedWriter outFile, int key) throws IOException{
+	public boolean decodeColumnarTransposition(BufferedReader inFile, String outFileName, int key) throws IOException{
+		BufferedWriter outFile = new BufferedWriter(new FileWriter(outFileName));
 	    String text = new Scanner( inFile ).useDelimiter("\\A").next();//read the whole file in 1 line :-)
 		int colLength = (text.length()+1)/key;//integer division on purpose...
 		System.out.println(key);
@@ -97,52 +100,5 @@ public class Transposition{
 		outFile.close();
 		return true;
 	}
-	
-	
-	
-	
-	
-	
-	
-	public String trans(String ktxt, String ptxt){
-        int key_length = ktxt.length();
-        char[] temp = ktxt.toCharArray();               
-                //remove \n from key length
-                key_length = key_length - 2;
-                int[] key = new int[key_length];
-               
-                for(int i=0; i < (key_length); i++){
-                        key[i] = Character.getNumericValue(temp[i]);
-                }              
-                               
-                char[] temp_in = new char[key_length];
-                char[] temp_out = new char[key_length];
-                StringBuffer output = new StringBuffer(ptxt.length());
-                int max = ptxt.length();
-                for(int i = 0; i < max; i+=key_length){
-                       
-                        //grab chars
-                        temp_in = ptxt.substring(i, i+key_length).toCharArray();
-                        temp_out = new char[key_length];
-                       
-                        System.out.println("PLACEHOLDER!" + max);
-                        for(int b=0; b<key_length; b++)
-                                System.out.print(temp_in[b]);
-                       
-                        //swap chars
-                        for(int j=0; j < key_length; j++){
-                                System.out.println(j + " " + key_length);
-                                temp_out[j] = temp_in[key[j]-1];
-                                System.out.println(temp_out[j] + ":" + temp_in[key[j]-1]);
-                        }
-                       
-                        //add to the output
-                        output.append(temp_out);
-                        System.out.println(output.toString());
-                }
-               
-                return output.toString();
-               
-    }
 
 }

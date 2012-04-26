@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  11 APR 2012 13:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  26 APR 2012 14:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -77,25 +77,28 @@ LaTeX Info: Redefining \bm on input line 204.
 )
 \c@appendix=\count89
 )
-No file report.aux.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-(/usr/local/texlive/2011/texmf-dist/tex/latex/apa/english.apa
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/apa/english.apa
 File: english.apa 2006/01/01
-)
-(/usr/local/texlive/2011/texmf-dist/tex/latex/apacite/english.apc
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2009/03/01 v4.05 apacite language file
 LaTeX Info: Redefining \BPBI on input line 119.
 LaTeX Info: Redefining \BHBI on input line 120.
@@ -109,20 +112,24 @@ Using title for running head
 [1
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./report.aux) ) 
+(./report.aux) )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 7 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 946 strings out of 493633
- 10896 string characters out of 3143378
- 65438 words of memory out of 3000000
- 4312 multiletter control sequences out of 15000+200000
+ 982 strings out of 493633
+ 11531 string characters out of 3143378
+ 67438 words of memory out of 3000000
+ 4342 multiletter control sequences out of 15000+200000
  4537 words of font info for 17 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 27i,4n,21p,202b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,4n,21p,794b,170s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr17.pfb>
-Output written on report.pdf (1 page, 29490 bytes).
+Output written on report.pdf (1 page, 38349 bytes).
 PDF statistics:
  20 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream

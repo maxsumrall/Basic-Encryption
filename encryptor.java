@@ -30,12 +30,12 @@ public class encryptor{
 		BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
 		//kb, as in "keyboard"
 		System.out.println("Hej Hej");
-		System.out.println("Choose a method:\n (1)Caesar-Cipher \n(2)Max-Cipher \n(3)NUll");
+		System.out.println("Choose a method:\n (1)Caesar-Cipher \n(2)Max-Cipher \n(3)Transposition Method");
 		encryptionMethod = kb.readLine();
 		System.out.print("Choose the operation you want to do: Encryption (1), Decryption (2): ");
 		String operation = kb.readLine();
 		if(operation.equals("1")){encrypt = true;}
-		System.out.print("Type the name of the file =[MUST BE IN SAME DIRECTORY]= :");
+		System.out.print("Type the name of the file [MUST BE IN SAME DIRECTORY] :");
 		fileName = kb.readLine();
 		System.out.print("Type the key you want to use (If applicable, otherwise press enter): ");
 		key = kb.readLine();
@@ -70,11 +70,15 @@ public class encryptor{
 		}
 		
 		if(encryptionMethod.equals("3")){
-			System.out.println("YOUr CODE HERE");
-			
-			
-			
-			
+			System.out.println("Attemping Transposition Method");
+			Transposition t = new Transposition();
+			Integer i = new Integer(key);
+			if(encrypt){
+				if(t.encodeColumnarTransposition(reader,"Encrypted"+fileName, i)){System.out.println("Success");}
+			}
+			else{
+				if(t.decodeColumnarTransposition(reader, "Decrypted"+fileName, i)){System.out.println("Success");}
+			}	
 			
 		}
 	}
