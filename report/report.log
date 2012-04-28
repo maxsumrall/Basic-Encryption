@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  26 APR 2012 16:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  28 APR 2012 12:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -118,22 +118,23 @@ Using title for running head
 ### semi simple group (level 1) entered at line 7 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 984 strings out of 493633
- 11555 string characters out of 3143378
- 68438 words of memory out of 3000000
- 4343 multiletter control sequences out of 15000+200000
- 4890 words of font info for 18 fonts, out of 3000000 for 9000
+ 986 strings out of 493633
+ 11579 string characters out of 3143378
+ 69438 words of memory out of 3000000
+ 4344 multiletter control sequences out of 15000+200000
+ 5236 words of font info for 19 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 27i,4n,21p,1138b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,4n,21p,1461b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sl10.pfb>
-Output written on report.pdf (2 pages, 54101 bytes).
+sl10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on report.pdf (2 pages, 64163 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
