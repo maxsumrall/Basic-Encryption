@@ -1,3 +1,7 @@
+This is a repo for cooperating on an assignment in the course: 1DV200, Spring 2012, Linneuniversitetet, Växjö Sweden. 
+
+It implements BASIC forms of encryption. 
+
 Get the java files and compile them. Then you need a normal text file in the same directory.
 Run the encryptor file, and follow the instructions. The file will be saved out with the word ENCRYPTED
 or DECYRPTED prefixed to it. 
